@@ -1,0 +1,10 @@
+site_name: V1nci 的笔记本
+site_url: https://note.v1nci.xyz/
+repo_name: coldinke/notebook
+repo_url: https://github.com/coldinke/notebook/
+edit_uri: tree/main/docs
+site_description: V1nci 的笔记本
+
+theme:
+  name: 'material'
+  language: 'zh'
