@@ -1,0 +1,9 @@
+name: mkdocs-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - mkdocs
+  - mkdocs-material
+

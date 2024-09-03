@@ -1,3 +1,3 @@
-# :(   building.
+# V1nci's Note Book
 
-> Building
+> Building...

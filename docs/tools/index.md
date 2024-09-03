@@ -1,18 +1,12 @@
 # 常用工具学习笔记
 
+!!! note 
+    以下内容汇总了笔者在工作及日常使用中接触并使用过的 Linux(Unix-like) 工具。
 
 ## Table of Contents
 
-- Linux/Unix 常用工具
-    - [文件相关](./common.md)
-    - [网络相关](./network.md)
-    - [系统监测](./monitoring.md)
-
-- 开发工具
-    - [Git 学习笔记](./git.md)
-
-- 包管理工具
-    - [汇总](./package.md)
+- [Unix 工具](./tools.md)
+- [包管理工具](./package.md)
 
 ## Resource
 

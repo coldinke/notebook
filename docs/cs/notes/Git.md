@@ -194,10 +194,6 @@ One way you might imagine implementing snapshotting as described above is to hav
 
 Git accommodates such scenarios by allowing you to specify which modifications should be included in the next snapshot through a mechanism called the "*staging area*".
 
-
-## More content ...
-
-
 ## Reference 
 
 https://missing.csail.mit.edu/2020/version-control/

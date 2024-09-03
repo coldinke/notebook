@@ -4,7 +4,7 @@ repo_name: coldinke/notebook
 repo_url: https://github.com/coldinke/notebook/
 edit_uri: tree/main/docs
 site_description: V1nci 的笔记本
-copyright: Copyright &copy; 2024 <a href="https://github.com/coldinke" target="_blank" rel="noopener">V1nci</a>
+copyright: Copyright &copy; 2024 - 2025  <a href="https://github.com/coldinke" target="_blank" rel="noopener">V1nci</a>
 
 theme:
   name: 'material'
@@ -56,15 +56,11 @@ extra_css:
 nav:
   - Home:
     - index.md
-  - CS:
+  - Computer Science:
     - cs/index.md
+  - Security:
+    - sc/index.md
   - Tools:
     - tools/index.md
-    - Linux 常用工具:
-      - 文件相关: tools/common.md
-      - 网络相关: tools/network.md
-      - 系统监测: tools/monitoring.md
-    - 开发中常用工具:
-      - Git: tools/Git.md
-    - 包管理器:
-      - 汇总: tools/package.md
+    - Linux/Unix 工具: tools/tools.md
+    - 包管理器: tools/package.md
