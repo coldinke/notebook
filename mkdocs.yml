@@ -65,6 +65,6 @@ nav:
       - 网络相关: tools/network.md
       - 系统监测: tools/monitoring.md
     - 开发中常用工具:
-      - Git: tools/Git.md
+      - Git: tools/git.md
     - 包管理器:
       - 汇总: tools/package.md
