@@ -10,22 +10,24 @@
       
       
       
+        <link rel="canonical" href="https://note.v1nci.xyz/sc/Browser/chrome/">
       
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>V1nci 的笔记本</title>
+        <title>Chromium 和 V8 的编译初体验 - V1nci 的笔记本</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -38,9 +40,9 @@
       
     
     
-      <link rel="stylesheet" href="/css/custom_color.css">
+      <link rel="stylesheet" href="../../../css/custom_color.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -65,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#chromium-v8" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -75,7 +82,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="/." title="V1nci 的笔记本" class="md-header__button md-logo" aria-label="V1nci 的笔记本" data-md-component="logo">
+    <a href="../../.." title="V1nci 的笔记本" class="md-header__button md-logo" aria-label="V1nci 的笔记本" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3v2h3c1.32 0 2.41.83 2.82 2H6v2h8v1h-2c-2.75 0-5 2.25-5 5s2.25 5 5 5c.77 0 1.45-.27 2-.7V21h2v-4h-2c-.45.62-1.17 1-2 1-1.67 0-3-1.33-3-3s1.33-3 3-3h4V9h2V7h-2.1c-.47-2.28-2.49-4-4.9-4z"/></svg>
@@ -95,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Chromium 和 V8 的编译初体验
             
           </span>
         </div>
@@ -194,7 +201,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/." class="md-tabs__link">
+        <a href="../../.." class="md-tabs__link">
           
   
   
@@ -216,7 +223,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/cs/" class="md-tabs__link">
+        <a href="../../../cs/" class="md-tabs__link">
           
   
   
@@ -238,7 +245,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/sc/" class="md-tabs__link">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -260,7 +267,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/tools/" class="md-tabs__link">
+        <a href="../../../tools/" class="md-tabs__link">
           
   
   
@@ -296,7 +303,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="V1nci 的笔记本" class="md-nav__button md-logo" aria-label="V1nci 的笔记本" data-md-component="logo">
+    <a href="../../.." title="V1nci 的笔记本" class="md-nav__button md-logo" aria-label="V1nci 的笔记本" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3v2h3c1.32 0 2.41.83 2.82 2H6v2h8v1h-2c-2.75 0-5 2.25-5 5s2.25 5 5 5c.77 0 1.45-.27 2-.7V21h2v-4h-2c-.45.62-1.17 1-2 1-1.67 0-3-1.33-3-3s1.33-3 3-3h4V9h2V7h-2.1c-.47-2.28-2.49-4-4.9-4z"/></svg>
@@ -347,7 +354,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/." class="md-nav__link ">
+            <a href="../../.." class="md-nav__link ">
               
   
   
@@ -405,7 +412,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/cs/" class="md-nav__link ">
+            <a href="../../../cs/" class="md-nav__link ">
               
   
   
@@ -463,7 +470,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/sc/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -525,7 +532,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/tools/" class="md-nav__link ">
+            <a href="../../../tools/" class="md-nav__link ">
               
   
   
@@ -560,7 +567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tools/tools/" class="md-nav__link">
+      <a href="../../../tools/tools/" class="md-nav__link">
         
   
   
@@ -583,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tools/package/" class="md-nav__link">
+      <a href="../../../tools/package/" class="md-nav__link">
         
   
   
@@ -623,6 +630,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      前提
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      下载 &amp; 编译
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="下载 &amp; 编译">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      下载
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      编译
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -634,8 +693,68 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="chromium-v8">Chromium 和 V8 的编译初体验</h1>
+<h2 id="_1">前提</h2>
+<ul>
+<li>合理的网络环境<ul>
+<li>使用全局的网络代理可以规避设置 Linux 下的命令行代理以及 Git 代理</li>
+</ul>
+</li>
+<li>下载 <code>depot_tools</code> 工具（核心）<ul>
+<li>下载地址 <code>https://chromium.googlesource.com/chromium/tools/depot_tools.git</code> </li>
+</ul>
+</li>
+</ul>
+<p>使用 Git 克隆完成后，将该工具的地址添加到环境变量 <code>PATH</code> 中，便于之后的使用。</p>
+<h2 id="_2">下载 &amp; 编译</h2>
+<h3 id="_3">下载</h3>
+<p>Chromium/V8 源码下载方式: 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span>analysis<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>analysis
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>fetch<span class="w"> </span>v8
+</code></pre></div></p>
+<p>如若在 <code>fetch v8</code> 下载时中断，之后可使用命令 <code>client sync</code> 重新开始。Chromium 的下载方式类似。</p>
+<h3 id="_4">编译</h3>
+<blockquote>
+<p>如果想分析具体的 CVE，可以使用下面的方式调整到具体的漏洞版本。
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># 调整到包含具体漏洞的 commit </span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span><span class="o">[</span>commit<span class="w"> </span><span class="nb">hash</span><span class="w"> </span>with<span class="w"> </span>vulnerability<span class="o">]</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># 下拉依赖</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>gclinet<span class="w"> </span>sync
+</code></pre></div></p>
+</blockquote>
+<p>编译 V8</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>gclient<span class="w"> </span>sync
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>tools/dev/v8gen.py<span class="w"> </span>x86.debug
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>ninja<span class="w"> </span>-C<span class="w"> </span>out.gn/x64.debug
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>./out.gn/x64.debug/d8
+</code></pre></div>
+<p>v8 中存在 Gdb 相关的辅助脚本，可以在 <code>~/.gdbinit</code> 或其他配置文件添加如下内容即可。
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">source</span><span class="w"> </span>/path/to/v8/tools/gdbinit
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">source</span><span class="w"> </span>/path/to/v8/tools/gdb-v8-support.py
+</code></pre></div></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -681,10 +800,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["content.code.annotate", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.top"], "search": "/assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
       
     
   </body>
