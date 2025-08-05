@@ -587,19 +587,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Linux/Unix 工具
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -611,61 +598,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔧 系统监控
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧠 进程管理
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧵 文件系统与磁盘
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      🌐 网络工具
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -722,50 +654,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔧 系统监控
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧠 进程管理
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧵 文件系统与磁盘
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      🌐 网络工具
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -788,123 +676,143 @@
 <p class="admonition-title">Note</p>
 <p>以下是笔者在日常开发与运维中使用过的工具，按用途分类整理。 获取命令使用方法可参考现代工具如 <a href="https://tldr.sh/"><code>tldr</code></a> 或 <code>man</code> 命令。</p>
 </div>
-<h2 id="_1">🔧 系统监控</h2>
+<style>
+.md-typeset table:not([class]) th {
+     min-width: 1em;
+}
+</style>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">系统监控</label><label for="__tabbed_1_2">进程管理</label><label for="__tabbed_1_3">文件系统与磁盘</label><label for="__tabbed_1_4">网络工具</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div style="text-align: center" markdown="1">
 <table>
 <thead>
 <tr>
-<th>工具名</th>
-<th>用途简述</th>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">用途简述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>top</code></td>
-<td>动态显示进程资源使用情况</td>
+<td style="text-align: left;"><code>top</code></td>
+<td style="text-align: left;">动态显示进程资源使用情况</td>
 </tr>
 <tr>
-<td><code>htop</code></td>
-<td><code>top</code> 的交互式增强版</td>
+<td style="text-align: left;"><code>htop</code></td>
+<td style="text-align: left;"><code>top</code> 的交互式增强版</td>
 </tr>
 <tr>
-<td><code>vmstat</code></td>
-<td>显示内存、I/O 等状态</td>
+<td style="text-align: left;"><code>vmstat</code></td>
+<td style="text-align: left;">显示内存、I/O 等状态</td>
 </tr>
 <tr>
-<td><code>iostat</code></td>
-<td>磁盘与 CPU 使用情况统计</td>
+<td style="text-align: left;"><code>iostat</code></td>
+<td style="text-align: left;">磁盘与 CPU 使用情况统计</td>
 </tr>
 <tr>
-<td><code>dstat</code></td>
-<td>综合性能监控</td>
+<td style="text-align: left;"><code>dstat</code></td>
+<td style="text-align: left;">综合性能监控</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_2">🧠 进程管理</h2>
+</div>
+</div>
+<div class="tabbed-block">
+<div style="text-align: center" markdown="1">
 <table>
 <thead>
 <tr>
-<th>工具名</th>
-<th>用途简述</th>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">用途简述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>ps</code></td>
-<td>查看当前系统进程状态</td>
+<td style="text-align: left;"><code>ps</code></td>
+<td style="text-align: left;">查看当前系统进程状态</td>
 </tr>
 <tr>
-<td><code>kill</code></td>
-<td>发送信号给指定进程</td>
+<td style="text-align: left;"><code>kill</code></td>
+<td style="text-align: left;">发送信号给指定进程</td>
 </tr>
 <tr>
-<td><code>killall</code></td>
-<td>根据进程名终止所有匹配进程</td>
+<td style="text-align: left;"><code>killall</code></td>
+<td style="text-align: left;">根据进程名终止所有匹配进程</td>
 </tr>
 <tr>
-<td><code>nice</code>/<code>renice</code></td>
-<td>设置/调整进程优先级</td>
+<td style="text-align: left;"><code>nice</code>/<code>renice</code></td>
+<td style="text-align: left;">设置/调整进程优先级</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_3">🧵 文件系统与磁盘</h2>
+</div>
+</div>
+<div class="tabbed-block">
+<div style="text-align: center" markdown="1">
 <table>
 <thead>
 <tr>
-<th>工具名</th>
-<th>用途简述</th>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">用途简述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>df</code></td>
-<td>查看磁盘空间使用情况</td>
+<td style="text-align: left;"><code>df</code></td>
+<td style="text-align: left;">查看磁盘空间使用情况</td>
 </tr>
 <tr>
-<td><code>du</code></td>
-<td>查看文件或目录所占磁盘空间</td>
+<td style="text-align: left;"><code>du</code></td>
+<td style="text-align: left;">查看文件或目录所占磁盘空间</td>
 </tr>
 <tr>
-<td><code>lsblk</code></td>
-<td>显示块设备信息</td>
+<td style="text-align: left;"><code>lsblk</code></td>
+<td style="text-align: left;">显示块设备信息</td>
 </tr>
 <tr>
-<td><code>mount</code>/<code>umount</code></td>
-<td>挂载与卸载设备</td>
+<td style="text-align: left;"><code>mount</code>/<code>umount</code></td>
+<td style="text-align: left;">挂载与卸载设备</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_4">🌐 网络工具</h2>
+</div>
+</div>
+<div class="tabbed-block">
+<div style="text-align: center" markdown="1">
 <table>
 <thead>
 <tr>
-<th>工具名</th>
-<th>用途简述</th>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">用途简述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>ping</code></td>
-<td>测试网络连接</td>
+<td style="text-align: left;"><code>ping</code></td>
+<td style="text-align: left;">测试网络连接</td>
 </tr>
 <tr>
-<td><code>curl</code></td>
-<td>发起 HTTP 请求或测试接口</td>
+<td style="text-align: left;"><code>curl</code></td>
+<td style="text-align: left;">发起 HTTP 请求或测试接口</td>
 </tr>
 <tr>
-<td><code>netstat</code></td>
-<td>查看网络连接状态（已被弃用）</td>
+<td style="text-align: left;"><code>netstat</code></td>
+<td style="text-align: left;">查看网络连接状态（已被弃用）</td>
 </tr>
 <tr>
-<td><code>ss</code></td>
-<td><code>netstat</code> 的替代工具</td>
+<td style="text-align: left;"><code>ss</code></td>
+<td style="text-align: left;"><code>netstat</code> 的替代工具</td>
 </tr>
 <tr>
-<td><code>tcpdump</code></td>
-<td>网络抓包工具</td>
+<td style="text-align: left;"><code>tcpdump</code></td>
+<td style="text-align: left;">网络抓包工具</td>
 </tr>
 </tbody>
 </table>
-<hr />
+</div>
+</div>
+</div>
+</div>
 
 
 
