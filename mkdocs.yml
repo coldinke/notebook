@@ -25,6 +25,7 @@ theme:
 markdown_extensions:
   - toc
   - meta
+  - tables
   - def_list
   - attr_list
   - md_in_html
